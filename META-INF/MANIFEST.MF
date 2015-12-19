@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: regex
+Bundle-SymbolicName: regex
+Bundle-Version: 1.0.0.qualifier
+Export-Package: iguana.regex,
+ iguana.regex.automaton,
+ iguana.regex.matcher
+Require-Bundle: utils;bundle-version="1.0.0",
+ org.scala-lang.scala-library;bundle-version="2.11.7"
