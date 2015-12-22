@@ -5,6 +5,7 @@ target
 .idea/tasks.xml
 .idea/dictionaries
 project/project
+.idea/modules/*build.iml
 project/target
 projectFilesBackup
 .classpath
