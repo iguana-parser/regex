@@ -2,8 +2,7 @@
 bin/
 target/
 .idea/
-project/project/
-project/target/
+project/
 projectFilesBackup/
 .classpath
 .project
