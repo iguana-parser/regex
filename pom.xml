@@ -70,12 +70,46 @@
                 </executions>
             </plugin>
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.springframework.build</groupId>
+                <artifactId>aws-maven</artifactId>
+                <version>5.0.0.RELEASE</version>
+            </extension>
+        </extensions>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>iguana-parser-repository</id>
+            <url>s3://iguana-parser-repository/snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>iguana-parser-repository</id>
+            <url>s3://iguana-parser-repository/release</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>iguana-parser-releases</id>
+            <url>s3://iguana-parser-repository/release</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>iguana-parser-snapshots</id>
+            <url>s3://iguana-parser-repository/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
     </repositories>
 
