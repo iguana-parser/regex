@@ -81,19 +81,19 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>iguana-parser-repository</id>
-            <url>s3://iguana-parser-repository/snapshot</url>
+            <id>iguana-snapshots</id>
+            <url>s3://iguana-snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>iguana-parser-repository</id>
-            <url>s3://iguana-parser-repository/release</url>
+            <id>iguana-releases</id>
+            <url>s3://iguana-releases</url>
         </repository>
     </distributionManagement>
 
     <repositories>
         <repository>
-            <id>iguana-parser-releases</id>
-            <url>s3://iguana-parser-repository/release</url>
+            <id>iguana-releases</id>
+            <url>s3://iguana-releases</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -102,8 +102,8 @@
             </releases>
         </repository>
         <repository>
-            <id>iguana-parser-snapshots</id>
-            <url>s3://iguana-parser-repository/snapshot</url>
+            <id>iguana-snapshots</id>
+            <url>s3://iguana-snapshots</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
