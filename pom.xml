@@ -93,7 +93,7 @@
     <repositories>
         <repository>
             <id>iguana-releases</id>
-            <url>s3://iguana-releases</url>
+            <url>https://s3.amazonaws.com/iguana-releases/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -103,7 +103,7 @@
         </repository>
         <repository>
             <id>iguana-snapshots</id>
-            <url>s3://iguana-snapshots</url>
+            <url>https://s3.amazonaws.com/iguana-snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
